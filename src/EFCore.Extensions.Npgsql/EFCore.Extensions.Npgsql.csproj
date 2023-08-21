@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <Version>0.0.1</Version>
+    <PackageId>$(AssemblyName)</PackageId>
+    <Description>Help methods for Entity Framework Core.</Description>
+    <Authors>jerviscui</Authors>
+    <Company>$(Authors)</Company>
+    <Product>$(AssemblyName)</Product>
+    <Copyright>Copyright 2023 $(Authors)</Copyright>
+    <PackageIcon></PackageIcon>
+    <PackageProjectUrl>https://github.com/jerviscui/EFCore.Extensions</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/jerviscui/EFCore.Extensions/blob/main/LICENSE</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/jerviscui/EFCore.Extensions</RepositoryUrl>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <IsPackable>True</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EFCore.Extensions.Common\EFCore.Extensions.Common.csproj" />
+  </ItemGroup>
+
+</Project>
