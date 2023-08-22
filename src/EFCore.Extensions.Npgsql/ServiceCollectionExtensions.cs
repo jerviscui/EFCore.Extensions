@@ -6,7 +6,7 @@ namespace EFCore.Extensions.Npgsql;
 
 public static class ServiceCollectionExtensions
 {
-    public static void UseSqlServerStrategy(this IServiceCollection services)
+    public static void UsePostgreSqlStrategy(this IServiceCollection services)
     {
         services.TryAddSingleton<IDbExceptionStrategy, PostgreSqlDbExceptionStrategy>();
     }

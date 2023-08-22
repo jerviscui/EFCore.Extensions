@@ -1,9 +1,8 @@
 using EFCore.Extensions.Common;
-using EFCore.Extensions.SqlServer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-namespace EFCore.Extensions.Npgsql;
+namespace EFCore.Extensions.SqlServer;
 
 public static class ServiceCollectionExtensions
 {
