@@ -5,7 +5,12 @@
 @echo 1. build
 @cd %curdir%\src
 
-@cd ./RetryCore
+@cd ./EFCore.Extensions.Npgsql
+dotnet clean >nul
+dotnet build --configuration Release >nul
+@cd ../
+
+@cd ./EFCore.Extensions.SqlServer
 dotnet clean >nul
 dotnet build --configuration Release >nul
 
@@ -16,7 +21,11 @@ dotnet build --configuration Release >nul
 @del /s /q /f *.nupkg >nul 2>nul
 @cd %curdir%\src
 
-@cd ./RetryCore
+@cd ./EFCore.Extensions.Npgsql
+dotnet pack -c Release -o %curdir%\nupkgs --no-build >nul
+@cd ../
+
+@cd ./EFCore.Extensions.SqlServer
 dotnet pack -c Release -o %curdir%\nupkgs --no-build >nul
 
 :: publish
