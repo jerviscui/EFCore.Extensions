@@ -6,7 +6,7 @@ namespace EFCore.Extensions.SqlServer;
 
 public static class ServiceCollectionExtensions
 {
-    public static void UseSqlServerStrategy(this IServiceCollection services)
+    public static void AddSqlServerStrategy(this IServiceCollection services)
     {
         services.TryAddSingleton<IDbExceptionStrategy, SqlServerDbExceptionStrategy>();
     }
