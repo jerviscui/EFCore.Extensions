@@ -1,5 +1,5 @@
-using System.Data.SqlClient;
 using EFCore.Extensions.Common;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace EFCore.Extensions.SqlServer;

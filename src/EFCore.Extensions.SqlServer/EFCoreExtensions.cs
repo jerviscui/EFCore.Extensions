@@ -1,7 +1,6 @@
-using EFCore.Extensions.SqlServer;
 using Microsoft.EntityFrameworkCore;
 
-namespace EFCore.Extensions.Npgsql;
+namespace EFCore.Extensions.SqlServer;
 
 public static class EFCoreExtensions
 {

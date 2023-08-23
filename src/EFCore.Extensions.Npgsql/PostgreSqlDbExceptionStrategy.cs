@@ -10,7 +10,7 @@ public class PostgreSqlDbExceptionStrategy : IDbExceptionStrategy
     public bool IsDuplicateKeyError(DbUpdateException exception)
     {
         // a unique constraint
-        return exception.InnerException is PostgresException { SqlState: "23505" };
+        return exception.InnerException is PostgresException { SqlState: PostgresErrorCodes.UniqueViolation };
     }
 
     /// <inheritdoc />
